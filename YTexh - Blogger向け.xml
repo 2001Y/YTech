@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta content="ja" http-equiv="content-language"/>
+    <meta content="noindex,nofollow,noarchive" name="robots"/>
+    <meta content="テスト説明" name="description"/>
+    <meta content="Apple,Mac,iOS,HTML,CSS,JavaScript,Blogger,2001Y" name="keywords"/>
+    <meta content="2001Y" name="author"/>
+    <meta content="Copyright © 2017 2001Y All Rights Reserved." name="copyright"/>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" name="viewport"/>
+    <meta content="604800" http-equiv="Expires"/>
+    <b:if cond='data:blog.pageType == "item"'>
+      <meta expr:content='data:blog.canonicalUrl' name='twitter:url'/>
+      <meta expr:content='data:blog.pageName' name='twitter:title'/>
+      <meta expr:content='data:blog.postImageUrl' name='twitter:image:src'/>
+      <b:else/>
+      <meta expr:content='data:blog.homepageUrl' name='twitter:url'/>
+      <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+      <meta content='Image URL' name='twitter:image:src'/>
+    </b:if>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+    </b:if>
+    <link rel="alternate" hreflang="ja" href="data:blog.homepageUrl"/>
+    <b:if cond='data:blog.pageType == "index" '>
+      <title><data:blog.title/> | <data:blog.description/></title>
+      <b:else/>
+      <title><data:blog.pageName/> | <data:blog.title/></title>
+    </b:if>
+    <!--[if lt IE 9]>
+    <script src="//cdn.jsdelivr.net/g/mootools@1.5.0(mootools-core-compat.min.js),respond@1.4.2,html5shiv@3.7.3,selectivizr@1.0.3b,ie7.js@2.1b4(IE7.js+IE8.js+IE9.js)></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <b:section id='header-content'>
+        <a expr:href='data:blog.url'>
+          <h1><data:blog.title/></h1>
+        </a>
+      </b:section>
+    </header>
+    <nav>
+      <input type="checkbox" id="nav-checkbox"/>
+      <label for="nav-checkbox">
+        <div class="nav-icon">
+          <span class="nav-border"></span>
+        </div>
+      </label>
+      <b:section id='nav-content'>
+        <b:widget class="nav-content" id='PageList1' locked='false' title='' type='PageList'></b:widget>
+      </b:section>
+    </nav>
+    <main>
+      <b:section id='main-content'>
+        <b:widget id='Blog1' type='Blog'>
+          <b:includable id='main'>
+            <b:if cond='data:blog.pageType == "index"'>
+              <b:loop values='data:posts' var='post'>
+                <a expr:href='data:post.url'>
+                  <div class="tmb">
+                    <img class="tmb-img" expr:src='data:post.firstImageUrl'/>
+                    <div class="tmb-contents">
+                      <h2><data:post.title/></h2>
+                      <div><data:post.body/></div>
+                    </div>
+                  </div>
+                </a>
+              </b:loop>
+            </b:if>
+            <b:if cond='data:blog.pageType == "item"'>
+              <b:loop values='data:post.labels' var='label'>
+                <a expr:href='data:label.url'>
+                  <data:label.name/>
+                </a>
+              </b:loop>
+              <data:post.timestamp/>
+              <h2><data:posts.title/></h2>
+              <div><data:posts.body/></div>
+            </b:if>
+          </b:includable>
+        </b:widget>
+      </b:section>
+      <b:section id='side-content'>
+        <h4>テストサイドバー</h4>
+        <p>
+          テストテスト
+        </p>
+      </b:section>
+    </main>
+    <footer>
+      <b:section id='footer-content'>
+        Copyright &#169; 2017 <br class="br"/><a href="//twitter.com/Y20010920T">2001Y</a> All Rights Reserved.
+      </b:section>
+    </footer>
+  </body>
+  <b:skin>
+    /* === html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark === */
+
+    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+    }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    nav ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+    }
+    a {
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+    }
+    ins {
+      background-color: #ff9;
+      color: #000;
+      text-decoration: none;
+    }
+    mark {
+      background-color: #ff9;
+      color: #000;
+      font-style: italic;
+      font-weight: bold;
+    }
+    del {
+      text-decoration: line-through;
+    }
+    abbr[title], dfn[title] {
+      border-bottom: 1px dotted;
+      cursor: help;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #cccccc;
+      margin: 1em 0;
+      padding: 0;
+    }
+    input, select {
+      vertical-align: middle;
+    }
+
+    /* === Custom === */
+
+    body {
+      font-family: "Rounded Mplus 1c", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", 'Hiragino Kaku Gothic ProN', 'Helvetica, Arial', 'sans-serif';
+      color: #333;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: normal;
+      background-color: #f8f8f8;
+    }
+    body::-moz-selection {
+        color: #f8f8f8;
+        background-color: #00ab95;
+    }
+    body::selection {
+        color: #f8f8f8;
+        background-color: #00ab95;
+    }
+    #content-main a {
+      color: #00ab95;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      transition: .3s;
+    }
+    #content-main a:hover {
+      -webkit-animation: zoom .3s;
+      animation: zoom .3s;
+    }
+
+    /** Title **/
+
+    h1 {
+      font-size: 1.3em;
+      padding-bottom: 0.7em;
+    }
+    h3 {
+      font-size: 1.3em;
+      background: #00ab95;
+      color: #fff;
+      padding: 15px 20px;
+    }
+    #content-side h4 {
+      padding: 10px 20px;
+      overflow: hidden;
+      background-color: #f8f8f8;
+      border-top: solid 1px #c6c6c6;
+      border-bottom: solid 1px #c6c6c6;
+    }
+    @media screen and (min-width:850px) {
+      h3 {
+        margin: 20px -20px 10px;
+      }
+      #content-side h4 {
+        margin: 10px -20px;
+      }
+    }
+    @media screen and (max-width:849px) {
+      h3 {
+        margin: 20px -10px 10px;
+      }
+      #content-side h4 {
+        margin: 10px -10px;
+      }
+    }
+
+    /** Main **/
+
+    #Blog1 a{
+      display: block;
+    }
+    .tmb {
+      display: flex;
+    }
+    .tmb-img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+    .tmb-contents {
+      margin-left: 10px;
+    }
+    footer, header {
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+      background: #00ab95;
+      color: #f3f3f3;
+    }
+    footer a, header a {
+      text-decoration: none;
+      color: #f3f3f3;
+    }
+    @media screen and (min-width:850px) {
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+      }
+      #Blog1 a,#content-side {
+        border: solid 1px #c6c6c6;
+        border-radius: 3px;
+        padding: 20px;
+        background-color: #fefefe;
+        overflow: hidden;
+      }
+      main {
+        width: auto;
+        min-width: 638px;
+      }
+      #Blog1 a {
+        width: 100%;
+      }
+      #Blog1 a:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      #content-side {
+        min-width: 258px;
+        margin-left: 20px;
+      }
+      .br {
+        display: none;
+      }
+    }
+    @media screen and (max-width:849px) {
+      body {
+        font-size: 90%;
+      }
+      #content-main,#content-side {
+        padding: 10px;
+      }
+      #content-main,#index-main {
+        margin-bottom: 10px;
+        border-bottom: solid 1px #c6c6c6;
+      }
+      #content-side {
+        border-top: solid 1px #c6c6c6;
+      }
+    }
+
+/** ResponsiveMenu **/
+#nav-checkbox {
+  display: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (min-width:850px) {
+  nav {
+    background: #007b67;
+    padding: 5px 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width:849px) {
+
+}
+
+/** Rounded Mplus Font **/
+
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 100;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Thin.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Thin.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Thin.ttf) format('truetype');
+    }
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 300;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Light.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Light.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Light.ttf) format('truetype');
+    }
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 400;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.ttf) format('truetype');
+    }
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 500;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Medium.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Medium.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Medium.ttf) format('truetype');
+    }
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 700;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.ttf) format('truetype');
+    }
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 800;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-ExtraBold.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-ExtraBold.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-ExtraBold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-ExtraBold.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-ExtraBold.ttf) format('truetype');
+    }
+    @font-face {
+      font-family: 'Rounded Mplus 1c';
+      font-style: normal;
+      font-weight: 900;
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Black.eot);
+      src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Black.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Black.ttf) format('truetype');
+    }
+  </b:skin>
+</html>
