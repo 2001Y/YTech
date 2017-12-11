@@ -48,7 +48,6 @@ body {
 	width: 100%;
 	background: #f2f2f2;
 	overflow-scrolling: touch;
-	-webkit-transform:translateZ(0);
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -1590,6 +1589,8 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	-o-transition: .3s;
 	transition: .3s;
 	z-index: 99999999999;
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
 }
 .light-box img {
   max-width: 70vw;
