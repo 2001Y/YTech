@@ -273,7 +273,7 @@ p {
 		-ms-flex-flow: column;
 		flex-flow: column;
 	}
-	.post-link:not(:last-of-type) .post-list {
+	.post-link:not(:last-of-type) {
 		margin-bottom: 10px;
 	}
 	.post-link:not(:first-of-type) .post-tmb-img {
