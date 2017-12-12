@@ -293,6 +293,7 @@
           let h2 = document.getElementsByTagName('h2')[0];
           h2.parentNode.insertBefore(div, h2);
           let lightbox = document.querySelectorAll(".light-box");
+          let body =  document.querySelector("body");
           document.querySelectorAll(".separator a").forEach((anchor) => {
             anchor.addEventListener("click", (event) => {
             	event.preventDefault();
@@ -300,6 +301,7 @@
               lightbox.forEach(lightbox => {
                 lightbox.classList.remove("close");
                 lightbox.classList.add("open");
+                body.classList.add("lock");
               });
             });
           });
@@ -308,6 +310,7 @@
             	event.preventDefault();
               lightbox.classList.remove("open");
               lightbox.classList.add("close");
+              body.classList.remove("lock");
             });
           });
           function copyText() {
