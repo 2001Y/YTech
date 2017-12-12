@@ -1597,6 +1597,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 .light-box img {
   max-width: 70vw;
   max-height: 70vh;
+	border-radius: 3px
 }
 .close {
   opacity: 0;
