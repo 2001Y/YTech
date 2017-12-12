@@ -1604,6 +1604,11 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
   opacity: 1;
   visibility: visible;
 }
+.lock {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
 
 /* Siema */
 
