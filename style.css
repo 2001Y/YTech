@@ -1173,6 +1173,60 @@ a.download:hover {
 	}
 }
 
+/* Noscript */
+
+#noscript {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  background: rgba(255, 0, 0, .8);
+  width: 100vw;
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width:651px) and (min-width:375px) {
+  #noscript br {
+    display: none;
+  }
+  .lv1:before {
+    content: " - ";
+  }
+}
+@media (max-width:650px) {
+  .lv1 {
+    display: none;
+  }
+  .lv2:before {
+    content: " - ";
+  }
+  #noscript br {
+    display: none;
+  }
+}
+@media (max-width:375px) {
+  .lv2:before {
+    content: "";
+  }
+  #noscript br {
+    display: inline;
+  }
+}
+
 /* ImgaeDiff */
 
 @media screen and (min-width: 769px) {
