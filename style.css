@@ -249,7 +249,6 @@ p {
 	.post-list,.post-main,#side-content,.newer-page div,.older-page div,.home-page div,.newer-post div,.older-post div {
 		border: solid 1px #e4e4e4;
 		border-radius: 3px;
-
 	}
 	#main-content {
 		min-width: 0;
