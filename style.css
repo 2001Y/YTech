@@ -231,7 +231,7 @@ p {
 		line-height: 150%;
 		letter-spacing: 0.05em;
 	}
-	main,#main-content,#Blog1,#Sidebar {
+	main,#main-content,#Blog1,aside {
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -255,7 +255,7 @@ p {
 		width: 100%;
 		max-width: 650px;
 	}
-	#Sidebar {
+	aside {
 		width: 300px;
 		margin-left: 15px;
 	}
@@ -267,7 +267,7 @@ p {
 		    -ms-flex-positive: 1;
 		        flex-grow: 1;
 	}
-	#main-content,#Blog1,#Sidebar {
+	#main-content,#Blog1,aside {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-webkit-flex-flow: column;
@@ -431,7 +431,7 @@ p {
 	display: block;
 	position: absolute;
 }
-#Sidebar h4 {
+aside h4 {
 	font-family: 'Dosis';
 	font-size: 1.2em;
 	padding: 10px;
@@ -444,7 +444,7 @@ p {
 	.post-main h2 {
 		margin: 25px -15px 20px;
 	}
-	#Sidebar h4 {
+	aside h4 {
 		margin: 10px -10px;
 	}
 }
@@ -452,14 +452,14 @@ p {
 	.post-main h2 {
 		margin: 25px -10px 15px;
 	}
-	#Sidebar h4 {
+	aside h4 {
 		margin: 10px -10px;
 	}
 }
 
 /* Sidebar */
 
-#Sidebar div:not(:last-of-type) {
+aside div:not(:last-of-type) {
 	margin-bottom: 10px;
 }
 

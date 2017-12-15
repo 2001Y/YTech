@@ -208,7 +208,7 @@
           <b:includable id='main'></b:includable>
         </b:widget>
       </b:section>
-      <div id='Sidebar'>
+      <aside>
         <div class="ad-content">
           <ins class="adsbygoogle" style="width:300px;height:250px" data-ad-client="ca-pub-3750999099107987" data-ad-slot="5338540875"></ins>
         </div>
@@ -261,7 +261,7 @@
         <div class="ad-content">
           <ins class="adsbygoogle" style="width:300px;height:250px" data-ad-client="ca-pub-3750999099107987" data-ad-slot="7602402245"></ins>
         </div>
-      </div>
+      </aside>
     </main>
     <footer>
       Copyright &#169; 2017
