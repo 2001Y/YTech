@@ -249,6 +249,7 @@ p {
 	.post-list,.post-main,#side-content,.newer-page div,.older-page div,.home-page div,.newer-post div,.older-post div {
 		border: solid 1px #e4e4e4;
 		border-radius: 3px;
+
 	}
 	#main-content {
 		min-width: 0;
@@ -1653,7 +1654,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 .light-box img {
   max-width: 70vw;
   max-height: 70vh;
-	border-radius: 3px
+	border-radius: 3px;
 }
 .close {
   opacity: 0;
