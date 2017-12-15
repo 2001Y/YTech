@@ -713,7 +713,7 @@ aside div:not(:last-of-type) {
 	width: 300px;
 	height: 250px;
 	border-radius: 3px;
-	background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgFBgcGBQgHBgcJCAgJDBMMDAsLDBgREQ4THBgdHRsYGxsfIywlHyApIRsbJjQnKS0vMTIxHSU2OjUwOSwwMS//wgALCAD6ASwBAREA/8QAGgABAQEAAwEAAAAAAAAAAAAAAAQDAQIFB//aAAgBAQAAAAD7WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGMfpPP062dgAAAARdt9JK+JawAAAA4hpxskrSVgAAABhlpP6ElfTCoAAAAJak20vKvkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/xAAwEAACAQMBBAkCBwAAAAAAAAABAgMABBEhEDFBgRITFCI0QFGRsVJxBUJhgJCh0f/aAAgBAQABPwD9/t4/QhI4tpUDGKZGOgPxtERmuZFBxgk/3XYT9Y9qIntjnPSWopBKgZfP3hMk6xjhpzNX0YCIwGi92rd+shU8cYP32W3jJefzsZQ6lTuNWJKtIh4eeYhVJO4DJq1ZWnaSRgN51PE1O8ckTL1i5xp3hvr8PfVkP3Gy28ZLz+dtrrdSnhr8+evn6MOOLHHKoLRXiDOWBOuldii+p/cf5WOz3Q17oO8+h2W3jJefzsmkESFjv4D1qwQhWc/m89dRSSyjC9waZyOdAAAAbgMDZeQtIVZBkjQ61D0hEocYYDBowzrM7xjGSdcjdmsXn6+4pbWSRszNp6ZyaVQoAAwBw/gk/9k=') center/cover no-repeat;
+	background: url('//cdn.rawgit.com/2001Y/YTech/3a6c696d/img/small-cat.jpeg') center/cover no-repeat;
 	overflow: hidden ;
 }
 .koukoku:hover {
@@ -725,6 +725,11 @@ aside div:not(:last-of-type) {
 	}
 	.koukoku:last-of-type {
 		margin-bottom: 10px;
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (   min--moz-device-pixel-ratio: 2),only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (        min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi),only screen and (min-resolution: 2dppx) {
+	.koukoku {
+		background: url("//cdn.rawgit.com/2001Y/YTech/3a6c696d/img/big-cat.jpeg") center/cover no-repeat;
 	}
 }
 
@@ -852,7 +857,7 @@ nav li:hover {
 	font-family: 'Dosis';
 	font-style: normal;
 	font-weight: 700;
-	src: local('Dosis Bold'), local('Dosis-Bold'), url(//fonts.gstatic.com/s/dosis/v6/22aDRG5X9l7obljtz7tihnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+	src: local('Dosis Bold'), local('Dosis-Bold'), url("//fonts.gstatic.com/s/dosis/v6/22aDRG5X9l7obljtz7tihnYhjbSpvc47ee6xR_80Hnw.woff2") format('woff2');
 	font-display: swap;
 }
 @font-face {
