@@ -713,7 +713,7 @@ aside div:not(:last-of-type) {
 	width: 300px;
 	height: 250px;
 	border-radius: 3px;
-	background: url('//cdn.rawgit.com/2001Y/YTech/3a6c696d/img/small-cat.jpeg') center/cover no-repeat;
+	background: url('//cdn.rawgit.com/2001Y/YTech/3a6c696d/img/big-cat.jpeg') center/cover no-repeat;
 	overflow: hidden ;
 }
 .koukoku:hover {
@@ -725,11 +725,6 @@ aside div:not(:last-of-type) {
 	}
 	.koukoku:last-of-type {
 		margin-bottom: 10px;
-	}
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (   min--moz-device-pixel-ratio: 2),only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (        min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi),only screen and (min-resolution: 2dppx) {
-	.koukoku {
-		background: url("//cdn.rawgit.com/2001Y/YTech/3a6c696d/img/big-cat.jpeg") center/cover no-repeat;
 	}
 }
 
