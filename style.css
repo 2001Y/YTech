@@ -713,7 +713,7 @@ aside div:not(:last-of-type) {
 	width: 300px;
 	height: 250px;
 	border-radius: 3px;
-	background: url('//cdn.rawgit.com/2001Y/YTech/3a6c696d/img/big-cat.jpeg') center/cover no-repeat;
+	background: url('//cdn.rawgit.com/2001Y/YTech/ef25bb26/img/cat.jpeg') center/cover no-repeat;
 	overflow: hidden ;
 }
 .koukoku:hover {
