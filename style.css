@@ -92,16 +92,18 @@ p {
 	font-family: 'Rounded Mplus 1c';
 	font-style: normal;
 	font-weight: 400;
-	src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.eot);
-	src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.ttf) format('truetype');
+	src: local('Rounded-X M+ 2c regular'),local('rounded-x-mplus-2c-regular');
+	src: url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Regular.eot);
+	src: url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Regular.woff2) format('woff2'),url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Regular.woff) format('woff'),url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Regular.ttf) format('truetype');
   font-display: swap;
 }
 @font-face {
 	font-family: 'Rounded Mplus 1c';
 	font-style: normal;
 	font-weight: 700;
-	src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.eot);
-	src: url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Bold.ttf) format('truetype');
+	src: local('Rounded-X M+ 2c bold'),local('rounded-x-mplus-2c-bold');
+	src: url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Bold.eot);
+	src: url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Bold.woff2) format('woff2'),url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Bold.woff) format('woff'),url(//cdn.rawgit.com/2001Y/YTech/5f4576bc/Font/RoundedMplus1c/RoundedMplus1c-Bold.ttf) format('truetype');
 	font-display: swap;
 }
 
