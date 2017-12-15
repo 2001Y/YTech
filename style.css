@@ -857,7 +857,7 @@ nav li:hover {
 	font-family: 'YTech-iConFont';
 	font-weight: normal;
 	font-style: normal;
-	src: url("//cdn.rawgit.com/2001Y/eb61e2332e73b589283ce6892797d720/raw/1119d0df405e7b9b97dec67304cc3b23c768ce28/YTech-iConFont.woff") format('woff');
+	src: url("//cdn.rawgit.com/2001Y/YTech/09af4709/Font/YTech-iConFont.woff") format('woff');
 	font-display: swap;
 }
 [class*=" icon-"],[class^="icon-"] {
