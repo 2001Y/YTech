@@ -225,15 +225,15 @@
           </a>
         </div>
         <a id="my-music" href="//www.last.fm/ja/user/Y20010920T" target="_blank">
-  <div>
-    <img src="data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7" id="artwork" alt="Artwork"/>
-    <div class="meta">
-      <span id="track">Track</span>
-      <span id="album">Album</span>
-      <span id="artist">Artist</span>
-    </div>
-  </div>
-</a>
+          <div>
+            <img src="data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7" id="artwork" alt="Artwork"/>
+            <div class="meta">
+              <span id="track">Track</span>
+              <span id="album">Album</span>
+              <span id="artist">Artist</span>
+            </div>
+          </div>
+        </a>
         <b:section id='side-content'>
           <b:widget id='BlogSearch1' type='BlogSearch' locked='true'>
             <b:includable id='main'>
