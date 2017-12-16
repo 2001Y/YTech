@@ -340,7 +340,7 @@ p {
 	#main-content {
 		margin: 10px 0;
 	}
-	.post-main,#side-content,.page-nav {
+	.post-main,#side-content,#my-music>div,.page-nav {
 		border-top: solid 1px #c6c6c6;
 		border-bottom: solid 1px #c6c6c6;
 	}
