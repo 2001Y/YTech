@@ -68,7 +68,7 @@
     <!--[if lt IE 9]>
       <script src='//cdn.jsdelivr.net/g/html5shiv@3.7.3,ie7.js@2.1b4(IE9.js),respond@1.4.2'></script>
     <![endif]-->
-    <link href="//rawgit.com/2001Y/YTech/master/style.min.css" rel="stylesheet"/>
+    <link href="//rawgit.com/2001Y/YTech/master/style.css" rel="stylesheet"/>
     &lt;!--</head>--&gt;&lt;/head&gt;
   <body>
     <header>
