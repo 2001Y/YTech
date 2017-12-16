@@ -641,6 +641,58 @@ aside div:not(:last-of-type) {
 	}
 }
 
+/** NowPlayingMusic **/
+
+#my-music {
+  color: #fff;
+  text-decoration: none;
+}
+#my-music>div {
+  max-width: 90vw;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#my-music .meta {
+  margin-left: 4vmin;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#my-music span {
+  display: block;
+}
+#artwork {
+  max-width: 40vmin;
+  max-height: 40vmin;
+  width: 250px;
+  height: 250px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+  -o-object-fit: cover;
+     object-fit: cover
+}
+#track {
+  font-size: 4.5vmin;
+}
+#album {
+  font-size: 3.5vmin;
+}
+#artist {
+  font-size: 2.5vmin;
+}
+
 /** PopularPostsWidget **/
 
 .PopularPosts {

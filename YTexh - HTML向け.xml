@@ -25,7 +25,7 @@
     <link href="//twitter.com/Y20010920T" rel="publisher"/>
     <link href="//line.me/ti/p/@ovx8986w" rel="publisher"/>
     <link href="//www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ" rel="publisher"/>
-    <meta content="#00ab95" name="theme-color">
+    <meta content="#00ab95" name="theme-color"/>
     <meta href="" property="fb:admins"/>
     <meta href="" property="fb:app_id"/>
     <meta content="@Y20010920T" name="twitter:site"/>
@@ -224,6 +224,16 @@
             <div class="icon-rss"><span>RSS</span></div>
           </a>
         </div>
+        <a id="my-music" href="//www.last.fm/ja/user/Y20010920T" target="_blank">
+  <div>
+    <img src="data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7" id="artwork" alt="Artwork"/>
+    <div class="meta">
+      <span id="track">Track</span>
+      <span id="album">Album</span>
+      <span id="artist">Artist</span>
+    </div>
+  </div>
+</a>
         <b:section id='side-content'>
           <b:widget id='BlogSearch1' type='BlogSearch' locked='true'>
             <b:includable id='main'>
@@ -355,6 +365,31 @@
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-68964193-8', 'auto');ga('send', 'pageview');
         (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
+        obj = new XMLHttpRequest();
+        let load = function(){
+        	obj.open("get","//ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Y20010920T&api_key=505019716765d9ebe20f8f05bbde7789&format=json", true);
+        	obj.onload = function(){
+        		let deta = JSON.parse(obj.response).recenttracks.track['0'];
+        		let artworkImg = deta.image['3']['#text'];
+        		let artwork = document.getElementById("artwork");
+        		if (artworkImg != "") {
+        			artwork.src = artworkImg;
+        		} else {
+        			artwork.src = "//placehold.jp/22dfb/ffffff/500x500.png?text=" + deta.name;
+        			let rangeRndm = function(min, max) {
+        				return Math.random()*(max-min+1) + min|0;
+        			};
+        			artwork.style.background = 'hsla(' + rangeRndm(0, 360) + ',100%,' + rangeRndm(25, 75) + '%,.7)';
+        		}
+        		document.getElementById("my-music").href = deta.url;
+        		document.getElementById("artwork").alt = deta.name;
+        		document.getElementById("track").innerHTML = deta.name;
+        		document.getElementById("album").innerHTML = deta.album['#text'];
+        		document.getElementById("artist").innerHTML = deta.artist['#text'];
+        	}
+        	obj.send(null);
+        }
+        setInterval(load,60000);
         -->
       </script>
     </footer>
