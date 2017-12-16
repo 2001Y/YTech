@@ -647,6 +647,7 @@ aside div:not(:last-of-type) {
   color: #363636;
   text-decoration: none;
 	margin-bottom: 10px;
+	display: block;
 }
 #my-music>div {
   margin: auto 0;
