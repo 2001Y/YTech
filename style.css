@@ -644,7 +644,7 @@ aside div:not(:last-of-type) {
 /** NowPlayingMusic **/
 
 #my-music {
-  color: #fff;
+  color: #363636;
   text-decoration: none;
 }
 #my-music>div {
@@ -676,13 +676,13 @@ aside div:not(:last-of-type) {
      object-fit: cover
 }
 #track {
-  font-size: 4.5vmin;
+  font-size: 15px;
 }
 #album {
-  font-size: 3.5vmin;
+  font-size: 13px;
 }
 #artist {
-  font-size: 2.5vmin;
+  font-size: 10px;
 }
 
 /** PopularPostsWidget **/
