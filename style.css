@@ -21,7 +21,7 @@ blockquote,q {
 blockquote:before,blockquote:after,q:before,q:after {
 	content: '';
 }
-a {
+a,p {
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
@@ -1083,14 +1083,14 @@ a.download:hover {
 
 /* LastComment */
 
-.last-comment {
+.last-comment,[class*="balloon"] {
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 }
-.last-comment a {
+.last-comment a,[class*="balloon"] a {
 	color: #363636;
 	text-align: center;
 	text-decoration: none;
@@ -1098,13 +1098,15 @@ a.download:hover {
 	letter-spacing: 0;
 	width: 50px;
 }
-.last-comment img {
-	width: 46px;
-	height: 46px;
+[class*="balloon"] div {
+  background: url(//sites.google.com/site/y20010920t/file/2001Y.png) center/cover;
+}
+.last-comment img,[class*="balloon"] div {
+	width: 50px;
+	height: 50px;
 	-webkit-flex-basis: 46px;
 	-ms-flex-preferred-size: 46px;
 	flex-basis: 46px;
-	border: 2px solid #fff;
 	border-radius: 50%;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
@@ -1112,56 +1114,83 @@ a.download:hover {
 	-o-object-fit: cover;
 	object-fit: cover;
 }
-.last-comment a:hover img {
+.last-comment a:hover img,[class*="balloon"] a:hover div {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
-.last-comment>span {
+[class*="balloon"] span {
+  margin-top: 3px;
+  display: block;
+}
+.last-comment>span,[class*="balloon"] p {
 	color: #363636;
 	width: 100%;
-	padding: 20px;
+	padding: 21.5px;
 	border: 2px solid #363636;
 	border-radius: 10px;
 	background: #fff;
 	position: relative;
 	display: block;
 }
-.last-comment>span:after,.last-comment>span:before {
+.last-comment>span:after,.last-comment>span:before,[class*="balloon"] p:after,:before {
 	content: '';
 	width: 0;
 	height: 0;
 	display: block;
 	position: absolute;
 }
-.last-comment>span:after {
+.last-comment>span:after,[class*="balloon"] p:after {
 	border: 10px solid transparent;
-	border-right-color: #fff;
 	top: 12.5px;
+}
+.last-comment>span:before,[class*="balloon"] p:before {
+	border: 11px solid transparent;
+	top: 11.5px;
+}
+.last-comment>span:after,.balloon-left p:after {
+	border-right-color: #fff;
 	left: -19.5px;
 }
-.last-comment>span:before {
-	border: 11px solid transparent;
+.last-comment>span:before,.balloon-left p:before {
 	border-right-color: #363636;
-	top: 11.5px;
 	left: -23.5px;
 }
-@media screen and (min-width: 769px) {
-	.last-comment {
+.balloon-right p:after {
+	border-left-color: #fff;
+	right: -19.5px;
+}
+.balloon-right p:before {
+	border-left-color: #363636;
+	right: -23.5px;
+}
+@media screen and (min-width: 770px) {
+	.last-comment,[class*="balloon"] {
 		padding: 10px 20px;
 	}
 }
+@media screen and (max-width: 769px) {
+	.last-comment,[class*="balloon"] {
+		padding: 10px 0;
+	}
+}
 @media screen and (min-width: 414px) {
-	.last-comment>span {
+	.last-comment>span,.balloon-left p {
 		margin-left: 20px;
+	}
+  .balloon-right p {
+		margin-right: 20px;
 	}
 }
 @media screen and (max-width: 413px) {
-	.last-comment a {
+	.last-comment a,[class*="balloon"] a {
 		display: none;
 	}
-	.last-comment>span {
+	.last-comment>span,.balloon-left {
 		margin-left: 10px;
+	}
+  .balloon-right {
+		margin-right: 10px;
 	}
 }
 #hitokoto-frame {
