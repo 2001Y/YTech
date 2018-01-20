@@ -1342,6 +1342,7 @@ a.download:hover {
 	display: flex;
 }
 .diff span {
+	text-align: center;
 	display: block;
 }
 .hikaku {
