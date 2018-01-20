@@ -305,7 +305,6 @@
               lightbox.forEach(lightbox => {
                 lightbox.classList.remove("close");
                 lightbox.classList.add("open");
-                body.classList.add("lock");
               });
             });
           });
