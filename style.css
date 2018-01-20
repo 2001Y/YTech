@@ -1731,7 +1731,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: rgba(31, 20, 11, 0.5);
+	background: rgba(31, 20, 11, 0.3);
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 	-webkit-transition: .3s;
