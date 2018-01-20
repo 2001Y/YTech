@@ -40,7 +40,7 @@ input,select {
 body {
 	font-family: "Rounded Mplus 1c","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",'Hiragino Kaku Gothic ProN','Helvetica,Arial','sans-serif';
 	color: #363636;
-	font-size: 16px;
+	font-size: 14px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	word-break: normal;
@@ -715,7 +715,7 @@ aside div:not(:last-of-type) {
 	counter-reset: number;
 }
 .PopularPosts li {
-	font-size: 14px;
+	font-size: 13px;
 	letter-spacing: 0.01em;
 	line-height: 120%;
 	position: relative;
@@ -1635,12 +1635,11 @@ pre,.code {
 	background: #e5e5e5;
 }
 pre {
-	font-size: 14px;
+	font-size: 13px;
 	color: #d8d8d8;
 	line-height: 1.2;
 	margin: 30px 0 10px 0;
 	padding: 20px;
-	;
 	border-radius: 5px;
 	background: #282b2e;
 	display: block;
