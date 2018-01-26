@@ -87,6 +87,15 @@ p {
 	text-indent: 1em;
 	margin: 10px 0 15px 0;
 }
+table {
+	margin: 0 auto;
+}
+th {
+	border-bottom: solid 1px;
+}
+td {
+	padding: 0 5px;
+}
 
 /* MainFont */
 
