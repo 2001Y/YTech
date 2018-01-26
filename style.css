@@ -427,7 +427,7 @@ a:hover {
 	color: #232323;
 	font-size: 1.2em;
 	padding: .15em .5em .4em 2em;
-	margin-bottom: .3em;
+	margin: .3em 0 .5em 0;
 	border-bottom: 1px solid #8ddbba;
 	position: relative;
 }
@@ -987,7 +987,7 @@ nav li:hover {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	padding: 20px;
-	margin: 20px;
+	margin: 15px;
 }
 [id^="twitter-widget"] {
 	margin: 0 auto;
