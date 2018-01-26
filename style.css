@@ -75,14 +75,11 @@ footer a,header a {
 	color: #f3f3f3;
 }
 a {
+	color: #00ab95;
+	text-decoration: none;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
-}
-.post-body a {
-	color: #00ab95;
-	text-decoration: none;
-	display: inline-block;
 }
 .post-body p {
 	text-indent: 1em;
