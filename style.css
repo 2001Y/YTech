@@ -998,6 +998,9 @@ nav li:hover {
 .toc {
 	padding-left: 1.7em;
 }
+.toc li {
+	margin: 0;
+}
 
 /* BlogCard */
 
