@@ -218,7 +218,7 @@ td {
 	width: 100%;
 }
 .post-link:hover .post-tmb-img {
-	opacity: 0.7;
+	opacity: .7;
 }
 .post-link:not(:first-of-type) .post-tmb-content {
 	margin-left: 10px;
@@ -261,7 +261,7 @@ td {
 @media screen and (min-width:912px) {
 	body {
 		line-height: 150%;
-		letter-spacing: 0.05em;
+		letter-spacing: .05em;
 	}
 	main,#main-content,#Blog1,aside {
 		display: -webkit-box;
@@ -367,7 +367,7 @@ td {
 	body {
 		font-size: 90%;
 		line-height: 130%;
-		letter-spacing: 0.01em;
+		letter-spacing: .01em;
 	}
 	#main-content {
 		margin: 10px 0;
@@ -424,7 +424,7 @@ td {
 	color: #232323;
 	font-size: 1.2em;
 	padding: .15em .5em .4em 2em;
-	margin-bottom: 0.3em;
+	margin-bottom: .3em;
 	border-bottom: 1px solid #8ddbba;
 	position: relative;
 }
@@ -733,7 +733,7 @@ aside div:not(:last-of-type) {
 }
 .PopularPosts li {
 	font-size: 13px;
-	letter-spacing: 0.01em;
+	letter-spacing: .01em;
 	line-height: 120%;
 	position: relative;
 	z-index: 0;
@@ -766,7 +766,7 @@ aside div:not(:last-of-type) {
 	-ms-flex-preferred-size: 70px;
 	flex-basis: 70px;
 	margin-right: 5px;
-	border: solid 0.5px #c6c6c6;
+	border: solid .5px #c6c6c6;
 	border-radius: 19px;
 	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MC41IDcwLjQ2Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDpub25lO3N0cm9rZTojYzdjNmM2O3N0cm9rZS1taXRlcmxpbWl0OjEwO30uYntzdHJva2UtbGluZWNhcDpzcXVhcmU7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5Jb3NJY29uIDcwcHg8L3RpdGxlPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIzNS4yMyIgY3k9IjM1LjIyIiByPSIzMC4zMiIvPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIzNS4yNyIgY3k9IjM1LjIzIiByPSIxOC43MiIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMjIuMDEgNjkuOTZ2LTY5LjQ2bTI2LjQ4IDB2NjkuNDZtMjEuNDctNDcuOTVoLTY5LjQ2bTAgMjYuNDRoNjkuNDYiLz48Y2lyY2xlIGNsYXNzPSJhIiBjeD0iMzUuMjUiIGN5PSIzNS4yMSIgcj0iMTMuMjQiLz48cGF0aCBjbGFzcz0iYSIgZD0iTS41LjVsNjkuNDMgNjkuNDNtLTY5LjM5IDBsNjkuNDItNjkuNDMiLz48cGF0aCBjbGFzcz0iYiIgZD0iTS41IDQuOTFoNjkuNDZtLTY5LjQ2IDYwLjY0aDY5LjVtLTY1LjA5LTY1LjA1djY5LjQzbTYwLjY0LTY5LjQzdjY5LjQzbTQuNDEtMzQuN2gtNjkuNDJtMzQuNjktMzQuNzN2NjkuNDMiLz48L3N2Zz4=') center/cover no-repeat;
 	-o-object-fit: cover;
@@ -796,7 +796,7 @@ aside div:not(:last-of-type) {
 	overflow: hidden ;
 }
 .koukoku:hover {
-	opacity: 0.7;
+	opacity: .7;
 }
 @media screen and (max-width:911px) {
 	.koukoku {
@@ -1023,7 +1023,7 @@ nav li:hover {
 	background: rgba(0,0,0,.05);
 }
 [class^="blog-card"]>div>div {
-	font-size: 0.95em;
+	font-size: .95em;
 	line-height: 120%;
 	width: 100%;
 	display: -webkit-box;
@@ -1643,10 +1643,10 @@ a.download:hover {
 
 pre,.code {
 	font-family: Inconsolata,Osaka,Consolas,Courier New,Courier,Monaco,monospace;
-	letter-spacing: 0.01em;
+	letter-spacing: .01em;
 }
 .code {
-	font-size: 0.8em;
+	font-size: .8em;
 	padding: 3px 5px;
 	border-radius: 3px;
 	background: #e5e5e5;
@@ -1690,7 +1690,7 @@ pre {
 	background: #f1bf22;
 }
 pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .css:after,pre:hover .js:before,pre:hover .js:after {
-	opacity: 0.3;
+	opacity: .3;
 }
 .hljs-number,.hljs-literal,.hljs-symbol,.hljs-bullet {
 	color: #6897BB;
@@ -1748,7 +1748,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: rgba(31, 20, 11, 0.3);
+	background: rgba(31, 20, 11, .3);
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 	-webkit-transition: .3s;
