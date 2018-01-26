@@ -35,7 +35,7 @@ input,select {
 	vertical-align: middle;
 }
 
-/* Main */
+/* BaseStyle */
 
 body {
 	font-family: "Rounded Mplus 1c","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",'Hiragino Kaku Gothic ProN','Helvetica,Arial','sans-serif';
@@ -86,6 +86,13 @@ a {
 p {
 	text-indent: 1em;
 	margin: 10px 0 15px 0;
+}
+ul {
+	line-height: 100%;
+	margin: 10px 0;
+}
+li {
+	margin: .5em 0;
 }
 table {
 	margin: 0 auto;
