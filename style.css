@@ -75,32 +75,33 @@ footer a,header a {
 	color: #f3f3f3;
 }
 a {
-	color: #00ab95;
-	text-decoration: none;
-	display: inline-block;
-	position: relative;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
 }
-p {
+.post-body a {
+	color: #00ab95;
+	text-decoration: none;
+	display: inline-block;
+}
+.post-body p {
 	text-indent: 1em;
 	margin: 10px 0 15px 0;
 }
-ul {
+.post-body ul {
 	line-height: 100%;
 	margin: 10px 0;
 }
-li {
+.post-body li {
 	margin: .5em 0;
 }
-table {
+.post-body table {
 	margin: 10px auto;
 }
-th {
+.post-body th {
 	border-bottom: solid 1px;
 }
-td {
+.post-body td {
 	padding: 0 5px;
 }
 
