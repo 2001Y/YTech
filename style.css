@@ -81,6 +81,12 @@ a {
 	-o-transition: .3s;
 	transition: .3s;
 }
+a:hover {
+	opacity: .7;
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+}
 .post-body p {
 	text-indent: 1em;
 	margin: .5em 0;
