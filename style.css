@@ -89,6 +89,7 @@ p {
 }
 table {
 	margin: 0 auto;
+	padding: 10px;
 }
 th {
 	border-bottom: solid 1px;
