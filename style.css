@@ -86,7 +86,7 @@ a {
 }
 .post-body p {
 	text-indent: 1em;
-	margin: 10px 0 15px 0;
+	margin: .5em 0;
 }
 .post-body ul {
 	line-height: 100%;
