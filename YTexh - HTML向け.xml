@@ -280,7 +280,7 @@
       <a href="//twitter.com/Y20010920T">2001Y</a>
       All Rights Reserved.
       <b:if cond='data:blog.pageType == "item"'>
-        <script src="//rawgit.com/2001Y/YTech/master/script.min.js"></script>
+        <script async="async" src='//rawgit.com/2001Y/YTech/master/script.min.js'></script>
         <script>
           <!--
           let headers = document.querySelectorAll('h2');
