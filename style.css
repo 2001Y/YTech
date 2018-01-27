@@ -129,10 +129,6 @@ a:hover {
 
 /* Layout */
 
-#main-content a:not(.post-list):hover {
-	-webkit-animation: zoom .3s;
-	animation: zoom .3s;
-}
 .post-body>.separator:first-of-type a {
 	pointer-events: none;
 	cursor: default;
@@ -171,8 +167,8 @@ a:hover {
   left: 0;
 }
 .post-main a img {
-	-webkit-transition: .5s ease;
-	transition: .5s ease;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
 }
 .post-main a:hover img {
 	opacity: .7;
