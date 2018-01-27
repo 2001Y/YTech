@@ -646,8 +646,6 @@ aside div:not(:last-of-type) {
 	display: block;
 }
 #my-music>div {
-  margin: auto 0;
-	padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
