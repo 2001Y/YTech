@@ -665,8 +665,8 @@ aside div:not(:last-of-type) {
   display: block;
 }
 #artwork {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover
