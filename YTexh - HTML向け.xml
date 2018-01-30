@@ -40,7 +40,7 @@
       <meta expr:content="data:blog.pageName | YTech" name="twitter:title"/>
       <meta expr:content="data:blog.canonicalUrl'" name="twitter:url"/>
       <meta expr:content="data:post.firstImageUrl" name="twitter:image"/>
-      <meta expr:content="data:blog.pageName | YTech" property="og:site_name"/>
+      <meta expr:content="data:blog.pageName | YTech" property="og:title"/>
       <meta expr:content="data:post.url" property="og:url"/>
       <meta expr:content="data:post.firstImageUrl" property="og:image"/>
       <meta content="article" property="og:type"/>
@@ -50,10 +50,10 @@
       <meta content="2001Yによるブログ形式のメディア系ブログです。" property="og:description"/>
       <b:if cond='data:blog.pageType == "index" '>
         <meta content="YTech" name="twitter:title"/>
-        <meta content="YTech" property="og:site_name"/>
+        <meta content="YTech" property="og:title"/>
         <b:else/>
         <meta expr:content="data:blog.pageName | YTech" name="twitter:title"/>
-        <meta expr:content="data:blog.pageName | YTech" property="og:site_name"/>
+        <meta expr:content="data:blog.pageName | YTech" property="og:title"/>
       </b:if>
       <meta content="大きめのファビコン" name="twitter:image"/>
       <meta content="https://2001y.blogspot.jp" name="twitter:url"/>
