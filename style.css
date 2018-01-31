@@ -54,12 +54,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 ::-moz-selection {
-	color: #f8f8f8;
-	background: rgba(60,165,145,10);
+	background: rgba(60,165,145,.2);
 }
 ::selection {
-	color: #f8f8f8;
-	background: rgba(60,165,145,10);
+	background: rgba(60,165,145,.2);
 }
 footer,header {
 	background: #00ab95;
