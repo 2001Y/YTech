@@ -1709,10 +1709,14 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 .close {
   -webkit-animation: .3s linear feedout;
           animation: .3s linear feedout;
+	opacity: 0;
+	visibility: hidden;
 }
 .open {
   -webkit-animation: .3s linear feedin;
           animation: .3s linear feedin;
+	opacity: 1;
+	visibility: visible;
 }
 @-webkit-keyframes feedin {
 	from {

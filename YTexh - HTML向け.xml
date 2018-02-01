@@ -128,7 +128,7 @@
                     </noscript>
                   </div>
                 </div>
-                <div class="overflow close">
+                <div class="copy close">
                   コピー完了
                 </div>
                 <div class='light-box close'>
@@ -317,27 +317,21 @@
               lightbox.classList.add("close");
             });
           });
-          let pre = document.getElementsByTagName("pre");
-          let copy = document.getElementsByClassName("copy");
-          pre.forEach((anchor) => {
-            anchor.addEventListener("click", (event) => {
-              copy.classList.remove("close");
-              copy.classList.add("open");
-            });
-          });
-          pre.forEach(pre => {
-            pre.addEventListener("click", (event) => {
-              copy.classList.remove("open");
-              copy.classList.add("close");
-            });
-          });
           function copyText() {
             let target = this.querySelector('code');
             let range = document.createRange();
+            let copy = document.getElementsByClassName("copy");
             range.selectNode(target);
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
             document.execCommand('copy');
+            copy.classList.remove("close");
+            copy.classList.add("open");
+            function close() {
+              copy.classList.remove("open");
+              copy.classList.add("close");
+            };
+            setTimeout('close();', 1500);
           }[].forEach.call(document.getElementsByTagName("pre"), function (e, i, p) {
             e.addEventListener("click", copyText, false);
           });
