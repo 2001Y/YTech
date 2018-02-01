@@ -1693,9 +1693,6 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 .hljs-emphasis {
 	font-style: italic;
 }
-.hljs-strong,.hljs-keyword,.hljs-selector-tag,.hljs-selector-class,.hljs-selector-id {
-	font-weight: bold;
-}
 
 /* LightBox */
 
