@@ -310,13 +310,12 @@
               });
             });
           });
-          lightbox.forEach(lightbox => {
-            lightbox.addEventListener("click", (event) => {
-            	event.preventDefault();
-              lightbox.classList.remove("open");
-              lightbox.classList.add("close");
+          document.querySelectorAll("a").forEach(anchor => {
+            anchor.addEventListener("click", body => {
+              document.body.classList.add("feedout");
+              setTimeout('window.open(anchor.href);', 3000);
             });
-          });
+          }); 
           function copyText() {
             let target = this.querySelector('code');
             let range = document.createRange();
