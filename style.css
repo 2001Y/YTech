@@ -54,8 +54,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-kerning: normal;
 	        font-kerning: normal;
-	-webkit-animation: .3s pageFeedin;
-	        animation: .3s pageFeedin;
+	-webkit-animation: .5s pageFeedin;
+	        animation: .5s pageFeedin;
 }
 .feedin {
 	-webkit-animation: .3s pageFeedout;
