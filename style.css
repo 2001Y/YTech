@@ -1684,9 +1684,24 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	background: rgba(31, 20, 11, .3);
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
-	z-index: 99999999999;
+	z-index: 99999;
 	-webkit-transform: translate3d(0, 0, 0);
 	        transform: translate3d(0, 0, 0);
+}
+body::before {
+	content: "";
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 99999999999;
+	-webkit-animation: .3s feedout;
+	        animation: .3s feedout;
 }
 .copy {
 	color: #fff;
