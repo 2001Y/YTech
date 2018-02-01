@@ -1707,14 +1707,14 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	border-radius: 3px;
 }
 .close {
-  -webkit-animation: .3s linear feedout;
-          animation: .3s linear feedout;
+  -webkit-animation: .3s feedout;
+          animation: .3s feedout;
 	opacity: 0;
 	visibility: hidden;
 }
 .open {
-  -webkit-animation: .3s linear feedin;
-          animation: .3s linear feedin;
+  -webkit-animation: .3s feedin;
+          animation: .3s feedin;
 	opacity: 1;
 	visibility: visible;
 }
