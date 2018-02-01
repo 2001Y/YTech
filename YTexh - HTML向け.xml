@@ -385,8 +385,13 @@
         setInterval(load,60000);
         (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-68964193-8'}, 'google_translate_element');
+        }
         -->
       </script>
+      <div id="google_translate_element"></div>
+      <script async="async" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </footer>
     <noscript>
       <div id="noscript">
