@@ -1700,8 +1700,8 @@ body::before {
 	right: 0;
 	left: 0;
 	z-index: 99999999999;
-	-webkit-animation: .3s feedout;
-	        animation: .3s feedout;
+	-webkit-animation: .3s pageFeedout;
+	        animation: .3s pageFeedout;
 }
 .copy {
 	color: #fff;
@@ -1775,6 +1775,30 @@ body::before {
 	to {
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+@-webkit-keyframes pageFeedout {
+	from {
+		opacity: 1;
+  	visibility: visible;
+		background: #fff;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
+	}
+}
+@keyframes pageFeedout {
+	from {
+		opacity: 1;
+  	visibility: visible;
+		background: #fff;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
 	}
 }
 
