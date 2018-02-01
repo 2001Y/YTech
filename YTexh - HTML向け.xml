@@ -386,7 +386,7 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-68964193-8'}, 'google_translate_element');
+          new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT, gaTrack: true, gaId: 'UA-68964193-8'}, 'google_translate_element');
         }
         -->
       </script>
