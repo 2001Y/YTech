@@ -57,7 +57,7 @@ body {
 	-webkit-animation: .5s pageFeedin;
 	        animation: .5s pageFeedin;
 }
-.feedin {
+.feedout {
 	-webkit-animation: .3s pageFeedout;
 	        animation: .3s pageFeedout;
 }
