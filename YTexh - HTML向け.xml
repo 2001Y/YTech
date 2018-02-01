@@ -128,6 +128,9 @@
                     </noscript>
                   </div>
                 </div>
+                <div class="overflow close">
+                  コピー完了
+                </div>
                 <div class='light-box close'>
                   <img src=''/>
                 </div>
@@ -312,7 +315,20 @@
             	event.preventDefault();
               lightbox.classList.remove("open");
               lightbox.classList.add("close");
-              body.classList.remove("lock");
+            });
+          });
+          let pre = document.getElementsByTagName("pre");
+          let copy = document.getElementsByClassName("copy");
+          pre.forEach((anchor) => {
+            anchor.addEventListener("click", (event) => {
+              copy.classList.remove("close");
+              copy.classList.add("open");
+            });
+          });
+          pre.forEach(pre => {
+            pre.addEventListener("click", (event) => {
+              copy.classList.remove("open");
+              copy.classList.add("close");
             });
           });
           function copyText() {
