@@ -302,7 +302,7 @@ a:hover {
 				flex-basis: calc(100% - 140px);
 	}
 	.post-tmb-content h2 {
-		font-size: 120%;
+		font-size: 1.3em;
 		margin-bottom: 5px;
 	}
 	.post-meta {
