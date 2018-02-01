@@ -284,9 +284,13 @@
           let updateYear = updateDeta.getFullYear();
           let updateMonth = updateDeta.getMonth() + 1;
           let updateDay = updateDeta.getDate();
+          let updateHour = updateDeta.getHours();
+          let updateMin = updateDeta.getMinutes();
           if (updateMonth < 10) updateMonth = "0" + updateMonth;
           if (updateDay < 10) updateDay = "0" + updateDay;
-          document.getElementsByClassName(post-update) = updateYear + "/" + updateMonth + "/" + updateDay + " " + updateDeta.getHours() + ":" + updateDeta.getMinutes();
+          if (updateHour < 10) updateHour = "0" + updateHour;
+          if (updateMin < 10) updateDay = "0" + updateMin;
+          document.getElementsByClassName(post-update) = updateYear + "/" + updateMonth + "/" + updateDay + " " + updateHour + ":" + updateMin;
           let headers = document.querySelectorAll('h2');
           let ol = document.createElement('ol');
           for(let i = 0; i < headers.length; ++i) {
