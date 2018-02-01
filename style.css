@@ -57,7 +57,7 @@ body {
 }
 body::before {
 	content: "";
-	display: none;
+	display: block;
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
@@ -92,6 +92,7 @@ body::before {
 	to {
 		opacity: 0;
 		visibility: hidden;
+		z-index: -99999999999;
 		background: #fff;
 	}
 }
@@ -101,10 +102,12 @@ body::before {
   	visibility: visible;
 		background: #fff;
 		display: block;
+
 	}
 	to {
 		opacity: 0;
 		visibility: hidden;
+		z-index: -99999999999;
 		background: #fff;
 	}
 }
