@@ -128,10 +128,10 @@
                     </noscript>
                   </div>
                 </div>
-                <div class="copy close">
+                <div class="copy delay">
                   コピー完了
                 </div>
-                <div class='light-box close'>
+                <div class='light-box delay'>
                   <img src=''/>
                 </div>
               </b:loop>

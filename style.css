@@ -1706,6 +1706,10 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
   max-height: 70vh;
 	border-radius: 3px;
 }
+.delay {
+	opacity: 0;
+	visibility: hidden;
+}
 .close {
   -webkit-animation: .3s feedout;
           animation: .3s feedout;
