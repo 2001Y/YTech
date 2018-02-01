@@ -81,6 +81,10 @@ a {
 a:hover {
 	opacity: .7;
 }
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-feature-settings: palt;
+	        font-feature-settings: palt;
+}
 .post-body p {
 	text-indent: 1em;
 	margin: .5em 0;
