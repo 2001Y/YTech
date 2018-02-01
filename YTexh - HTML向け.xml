@@ -299,7 +299,7 @@
           let h2 = document.getElementsByTagName('h2')[0];
           h2.parentNode.insertBefore(div, h2);
           let lightbox = document.querySelectorAll(".light-box");
-          let body =  document.querySelector("body");
+          let body =  document.body;
           document.querySelectorAll(".separator a").forEach((anchor) => {
             anchor.addEventListener("click", (event) => {
             	event.preventDefault();
@@ -334,6 +334,15 @@
             setTimeout('close();', 1500);
           }[].forEach.call(document.getElementsByTagName("pre"), function (e, i, p) {
             e.addEventListener("click", copyText, false);
+          });
+          document.querySelectorAll("a").forEach((anchor) => {
+            anchor.addEventListener("click", (event) => {
+            	event.preventDefault();
+              body.forEach(body => {
+                lightbox.classList.add("feedin");
+              });
+              setTimeout('window.open(anchor.href);', 30);
+            });
           });
           (function () {
             let d = document,

@@ -55,6 +55,83 @@ body {
 	-webkit-font-kerning: normal;
 	        font-kerning: normal;
 }
+body::before {
+	content: "";
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 99999999999;
+	-webkit-animation: .3s pageFeedout;
+	        animation: .3s pageFeedout;
+}
+.feedin::before {
+	content: "";
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 99999999999;
+	-webkit-animation: .3s pageFeedin;
+	        animation: .3s pageFeedin;
+}
+@-webkit-keyframes pageFeedout {
+	from {
+		opacity: 1;
+  	visibility: visible;
+		background: #fff;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
+	}
+}
+@keyframes pageFeedout {
+	from {
+		opacity: 1;
+  	visibility: visible;
+		background: #fff;
+		display: block;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
+	}
+}
+@-webkit-keyframes pageFeedin {
+	from {
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
+	}
+	to {
+		opacity: 1;
+  	visibility: visible;
+		background: #fff;
+	}
+}
+@keyframes pageFeedin {
+	from {
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
+	}
+	to {
+		opacity: 1;
+  	visibility: visible;
+		background: #fff;
+	}
+}
 ::-moz-selection {
 	background: rgba(60,165,145,.2);
 }
@@ -1688,20 +1765,6 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	-webkit-transform: translate3d(0, 0, 0);
 	        transform: translate3d(0, 0, 0);
 }
-body::before {
-	content: "";
-	display: block;
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 99999999999;
-	-webkit-animation: .3s pageFeedout;
-	        animation: .3s pageFeedout;
-}
 .copy {
 	color: #fff;
 	font-size: 1.5em;
@@ -1774,30 +1837,6 @@ body::before {
 	to {
 		opacity: 0;
 		visibility: hidden;
-	}
-}
-@-webkit-keyframes pageFeedout {
-	from {
-		opacity: 1;
-  	visibility: visible;
-		background: #fff;
-	}
-	to {
-		opacity: 0;
-		visibility: hidden;
-		background: #fff;
-	}
-}
-@keyframes pageFeedout {
-	from {
-		opacity: 1;
-  	visibility: visible;
-		background: #fff;
-	}
-	to {
-		opacity: 0;
-		visibility: hidden;
-		background: #fff;
 	}
 }
 
