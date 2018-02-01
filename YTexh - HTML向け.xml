@@ -14,7 +14,7 @@
     <meta property="article:publisher" href="//twitter.com/Y20010920T"/>
     <meta property="article:publisher" href="//line.me/ti/p/@ovx8986w"/>
     <meta property="article:publisher" href="//www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ"/>
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <b:if cond='data:blog.canonicalUrl == data:blog.homepageUrl'>
       <link href="https://2001y.blogspot.com" rel="canonical"/>
     </b:if>
     <b:if cond='data:blog.pageType == "item" '>
@@ -41,7 +41,7 @@
       <meta expr:content="data:blog.canonicalUrl'" name="twitter:url"/>
       <meta expr:content="data:post.firstImageUrl" name="twitter:image"/>
       <meta expr:content="data:blog.pageName | YTech" property="og:title"/>
-      <meta expr:content="data:post.url" property="og:url"/>
+      <meta expr:content="data:post.canonicalUrl" property="og:url"/>
       <meta expr:content="data:post.firstImageUrl" property="og:image"/>
       <meta content="article" property="og:type"/>
       <b:else/>
@@ -136,7 +136,7 @@
               </p>
               <b:else/>
               <b:loop values='data:posts' var='post'>
-                <a expr:href='data:post.url' class="post-link">
+                <a expr:href='data:post.canonicalUrl' class="post-link">
                   <div class="post-list">
                     <div class="post-tmb">
                       <b:if cond='data:post.firstImageUrl'>
@@ -253,7 +253,7 @@
               <ol>
                 <b:loop values='data:posts' var='post'>
                   <li>
-                    <a expr:href='data:post.href' target='_blank'>
+                    <a expr:href='data:post.canonicalUrl' target='_blank'>
                       <b:with value='resizeImage(data:post.featuredImage,180)' var="pp-img">
                         <img expr:src="data:pp-img"/>
                       </b:with>
