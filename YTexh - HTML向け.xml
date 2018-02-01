@@ -105,8 +105,9 @@
                 <div class="post-main">
                   <h1><data:post.title/></h1>
                   <div class="post-meta">
-                    <span class="post-day"><data:post.dateHeader/></span>
+                    <span class="post-day">投稿：<data:post.dateHeader/></span>
                     <span class="post-time"><data:post.timestamp/></span>
+                    <span class="post-update">更新：NoDeta</span>
                     <ul class="post-category">
                       <b:loop values='data:post.labels' var='label'>
                         <li>
@@ -279,6 +280,13 @@
         <script src='//rawgit.com/2001Y/YTech/master/script.min.js'></script>
         <script>
           <!--
+          let updateDeta = new Date(document.lastModified);
+          let updateYear = updateDeta.getFullYear();
+          let updateMonth = updateDeta.getMonth() + 1;
+          let updateDay = updateDeta.getDate();
+          if (updateMonth < 10) updateMonth = "0" + updateMonth;
+          if (updateDay < 10) updateDay = "0" + updateDay;
+          document.getElementsByClassName(post-update) = updateYear + "/" + updateMonth + "/" + updateDay + " " + updateDeta.getHours() + ":" + updateDeta.getMinutes();
           let headers = document.querySelectorAll('h2');
           let ol = document.createElement('ol');
           for(let i = 0; i < headers.length; ++i) {
