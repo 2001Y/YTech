@@ -1664,7 +1664,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 .separator a {
   cursor: pointer;
 }
-.light-box {
+.overflow {
 	width: 100vw;
 	height: 100vh;
 	display: -webkit-box;
