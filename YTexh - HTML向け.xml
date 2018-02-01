@@ -310,12 +310,14 @@
               });
             });
           });
-          document.querySelectorAll("a").forEach(anchor => {
-            anchor.addEventListener("click", body => {
-              document.body.classList.add("feedout");
-              setTimeout('window.open(anchor.href);', 3000);
-            });
-          }); 
+          document.querySelectorAll("a").forEach((anchor) => {
+            if (anchor.parentNode.className != "separator") {
+              anchor.addEventListener("click", (body) => {
+                document.body.classList.add("feedout");
+                setTimeout('window.open(anchor.href);', 3000);
+              });
+            }
+          });
           function copyText() {
             let target = this.querySelector('code');
             let range = document.createRange();
@@ -333,15 +335,6 @@
             setTimeout('close();', 1500);
           }[].forEach.call(document.getElementsByTagName("pre"), function (e, i, p) {
             e.addEventListener("click", copyText, false);
-          });
-          document.querySelectorAll("a").forEach((anchor) => {
-            anchor.addEventListener("click", (event) => {
-            	event.preventDefault();
-              body.forEach(body => {
-                lightbox.classList.add("feedin");
-              });
-              setTimeout('window.open(anchor.href);', 30);
-            });
           });
           (function () {
             let d = document,
