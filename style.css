@@ -35,6 +35,10 @@ input,select {
 	vertical-align: middle;
 }
 
+.toparea,.message,.submit:first-child,.fc2form div:last-child {
+  display: none;
+}
+
 /* BaseStyle */
 
 body {
