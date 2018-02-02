@@ -23,7 +23,7 @@
     <b:if cond='data:blog.pageType == "item" '>
       <link expr:href="data:blog.canonicalUrl" rel="canonical"/>
     </b:if>
-    <link type="application/rss+xml" href="https://2001y.blogspot.com/feeds/posts/default" rel="alternate"/>
+    <link type="application/rss+xml" href="https://2001y.blogspot.com/feeds/posts/default?alt=rss" rel="alternate"/>
     <link href="//plus.google.com/+2001Y" rel="publisher"/>
     <link href="//twitter.com/Y20010920T" rel="publisher"/>
     <link href="//line.me/ti/p/@ovx8986w" rel="publisher"/>
@@ -226,7 +226,7 @@
           <a href="//twitter.com/Y20010920T">
             <div class="icon-twitter"><span>Twitter</span></div>
           </a>
-          <a href="//2001y.blogspot.com/feeds/posts/default">
+          <a href="//2001y.blogspot.com/feeds/posts/default?alt=rss">
             <div class="icon-rss"><span>RSS</span></div>
           </a>
         </div>
