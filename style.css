@@ -1747,6 +1747,10 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 	        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
+[src="//rawgit.com/2001Y/YTech/master/load.svg"] {
+	-webkit-box-shadow: 0;
+	        box-shadow: 0;
+}
 .delay {
 	opacity: 0;
 	visibility: hidden;
