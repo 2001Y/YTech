@@ -298,26 +298,19 @@
           div.classList.add('toc');
           let h2 = document.getElementsByTagName('h2')[0];
           h2.parentNode.insertBefore(div, h2);
+
           let lightbox = document.querySelectorAll(".light-box");
           let body =  document.body;
-          document.querySelectorAll(".separator a").forEach((anchor) => {
-            anchor.addEventListener("click", (event) => {
-            	event.preventDefault();
-              document.querySelector(".light-box img").src = anchor.href;
-              lightbox.forEach(lightbox => {
-                lightbox.classList.remove("close");
-                lightbox.classList.add("open");
-              });
-            });
-          });
-          document.querySelectorAll("a").forEach((anchor) => {
-            if (anchor.parentNode.className != "separator") {
-              anchor.addEventListener("click", (body) => {
+
+          document.querySelectorAll("a").forEach((link) => {
+            if (link.parentNode.className != "separator") {
+              link.addEventListener("click", (body) => {
                 document.body.classList.add("feedout");
-                setTimeout('window.open(anchor.href);', 3000);
+                setTimeout('window.open(link.href);', 3000);
               });
-            }
+            };
           });
+
           function copyText() {
             let target = this.querySelector('code');
             let range = document.createRange();
