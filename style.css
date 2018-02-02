@@ -1716,7 +1716,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: rgba(31, 20, 11, .3);
+	background: rgba(31, 30, 30, .3);
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 	z-index: 99999;
@@ -1729,7 +1729,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	text-align: center;
 	padding: 6px;
 	border-radius: 6px;
-	background: rgba(31, 20, 11, .3);
+	background: rgba(31, 30, 30, .3);
 	position: fixed;
 	top: 50%;
 	left: 50%;
