@@ -13,10 +13,10 @@
     <meta content="4233600" http-equiv="expires"/>
     <meta content="telephone=no,address=no,email=no" name="format-detection"/>
     <meta content="74E89C4E770B52467F8C1A77909198FA" name="msvalidate.01"/>
-    <meta property="article:publisher" href="//plus.google.com/+2001Y"/>
-    <meta property="article:publisher" href="//twitter.com/Y20010920T"/>
-    <meta property="article:publisher" href="//line.me/ti/p/@ovx8986w"/>
-    <meta property="article:publisher" href="//www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ"/>
+    <meta property="article:publisher" href="https://plus.google.com/+2001Y"/>
+    <meta property="article:publisher" href="https://twitter.com/Y20010920T"/>
+    <meta property="article:publisher" href="https://line.me/ti/p/@ovx8986w"/>
+    <meta property="article:publisher" href="https://www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ"/>
     <b:if cond='data:blog.canonicalUrl == data:blog.homepageUrl'>
       <link href="https://2001y.blogspot.com" rel="canonical"/>
     </b:if>
@@ -24,10 +24,10 @@
       <link expr:href="data:blog.canonicalUrl" rel="canonical"/>
     </b:if>
     <link type="application/rss+xml" href="https://2001y.blogspot.com/feeds/posts/default?alt=rss" rel="alternate"/>
-    <link href="//plus.google.com/+2001Y" rel="publisher"/>
-    <link href="//twitter.com/Y20010920T" rel="publisher"/>
-    <link href="//line.me/ti/p/@ovx8986w" rel="publisher"/>
-    <link href="//www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ" rel="publisher"/>
+    <link href="https://plus.google.com/+2001Y" rel="publisher"/>
+    <link href="https://twitter.com/Y20010920T" rel="publisher"/>
+    <link href="https://line.me/ti/p/@ovx8986w" rel="publisher"/>
+    <link href="https://www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ" rel="publisher"/>
     <meta content="#00ab95" name="theme-color"/>
     <meta href="" property="fb:admins"/>
     <meta href="" property="fb:app_id"/>
