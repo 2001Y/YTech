@@ -35,7 +35,7 @@ input,select {
 	vertical-align: middle;
 }
 
-.toparea,.message,.submit:first-child,.fc2form div:last-child {
+.toparea,.message,form>div:nth-last-of-type(2),#output1047970>div:last-of-type {
   display: none;
 }
 
