@@ -1740,7 +1740,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 }
-.light-box img {
+.light-box img:not([src=//rawgit.com/2001Y/YTech/master/load.svg]) {
   max-width: 70vw;
   max-height: 70vh;
 	border-radius: 3px;
