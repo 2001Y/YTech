@@ -311,9 +311,9 @@
           });
           lightbox.forEach(lightbox => {
             lightbox.addEventListener("click", event => {
-              lightboxImg.src = "//rawgit.com/2001Y/YTech/master/load.svg";
               lightbox.classList.remove("open");
               lightbox.classList.add("close");
+              lightboxImg.src = "//rawgit.com/2001Y/YTech/master/load.svg";
             });
           });
           function copyText() {
