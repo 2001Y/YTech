@@ -313,7 +313,7 @@
             lightbox.addEventListener("click", event => {
               lightbox.classList.remove("open");
               lightbox.classList.add("close");
-              lightboxImg.src = "//rawgit.com/2001Y/YTech/master/load.svg";
+              lightboxImg.src = "";
             });
           });
           function copyText() {
