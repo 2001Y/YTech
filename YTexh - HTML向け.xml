@@ -297,12 +297,12 @@
           div.appendChild(ol);
           div.classList.add('toc');
           let lightbox = document.querySelectorAll(".light-box");
-          let lightbox-img = document.querySelector(".light-box img");
+          let lightboxImg = document.querySelector(".light-box img");
           let body =  document.body;
           document.querySelectorAll(".separator a").forEach(anchor => {
             anchor.addEventListener("click", event => {
               event.preventDefault();
-              lightbox-img.src = anchor.href;
+              lightboxImg.src = anchor.href;
               lightbox.forEach(lightbox => {
                 lightbox.classList.remove("close");
                 lightbox.classList.add("open");
@@ -311,7 +311,7 @@
           });
           lightbox.forEach(lightbox => {
             lightbox.addEventListener("click", event => {
-              lightbox-img.src = "//rawgit.com/2001Y/YTech/master/load.svg";
+              lightboxImg.src = "//rawgit.com/2001Y/YTech/master/load.svg";
               lightbox.classList.remove("open");
               lightbox.classList.add("close");
             });
