@@ -132,7 +132,7 @@
                   コピー完了
                 </div>
                 <div class='light-box delay'>
-                  <img src=''/>
+                  <img src='//rawgit.com/2001Y/YTech/master/load.svg'/>
                 </div>
               </b:loop>
               <b:elseif cond='data:blog.pageType == "error_page"'/>
@@ -297,11 +297,12 @@
           div.appendChild(ol);
           div.classList.add('toc');
           let lightbox = document.querySelectorAll(".light-box");
+          let lightbox-img = document.querySelector(".light-box img");
           let body =  document.body;
           document.querySelectorAll(".separator a").forEach(anchor => {
             anchor.addEventListener("click", event => {
               event.preventDefault();
-              document.querySelector(".light-box img").src = anchor.href;
+              lightbox-img.src = anchor.href;
               lightbox.forEach(lightbox => {
                 lightbox.classList.remove("close");
                 lightbox.classList.add("open");
@@ -310,6 +311,7 @@
           });
           lightbox.forEach(lightbox => {
             lightbox.addEventListener("click", event => {
+              lightbox-img.src = "//rawgit.com/2001Y/YTech/master/load.svg";
               lightbox.classList.remove("open");
               lightbox.classList.add("close");
             });
