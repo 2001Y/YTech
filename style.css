@@ -1809,30 +1809,30 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 }
 
 /* 404 */
-.nopage {
+#nopage {
 	color: #36ff07;
 	height: 15em;
 	border-radius: 6px;
 	padding: 20px;
 	background: #1c1c1c;
+	-webkit-animation: typewriter 4s steps(44) 1s 1 normal both;
+	        animation: typewriter 4s steps(44) 1s 1 normal both;
 }
-.ityped-cursor {
-    font-size: 2.2rem;
-    opacity: 1;
-    -webkit-animation: blink 0.3s infinite;
-    animation: blink 0.3s infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
+@-webkit-keyframes typewriter{
+  from {
+		width: 0;
+	}
+  to {
+		width: 24em;
+	}
 }
-@-webkit-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes blink {
-    100% {
-        opacity: 0;
-    }
+@keyframes typewriter{
+  from {
+		width: 0;
+	}
+  to {
+		width: 24em;
+	}
 }
 
 /* Siema */
