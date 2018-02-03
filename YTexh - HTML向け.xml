@@ -137,6 +137,9 @@
               </b:loop>
               <b:elseif cond='data:blog.pageType == "error_page"'/>
               <h1>404</h1>
+              <div id="404" contenteditab>
+
+              </div>
               <p>
                 ページが存在しません。
               </p>
@@ -259,7 +262,7 @@
               <ol>
                 <b:loop values='data:posts' var='post'>
                   <li>
-                    <a expr:href='data:post.canonicalUrl' target='_blank'>
+                    <a expr:href='data:post.href'>
                       <b:with value='resizeImage(data:post.featuredImage,180)' var="pp-img">
                         <img expr:src="data:pp-img"/>
                       </b:with>
@@ -324,8 +327,7 @@
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
             document.execCommand('copy');
-            copy.classList.remove("close");
-            copy.classList.add("open");
+            document.getElementsByClassName("copy").classList.add("open");
             function close() {
               copy.classList.remove("open");
               copy.classList.add("close");
