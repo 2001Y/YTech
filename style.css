@@ -498,7 +498,7 @@ aside h4 {
 	background: #fbfbfb;
 	overflow: hidden;
 }
-@media screen and (min-width:850px) {
+@media screen and (min-width:912px) {
 	.post-main h2 {
 		margin: 25px -15px 20px;
 	}
@@ -506,7 +506,7 @@ aside h4 {
 		margin: 10px -10px;
 	}
 }
-@media screen and (max-width:849px) {
+@media screen and (max-width:911px) {
 	.post-main h2 {
 		margin: 25px -10px 15px;
 	}
