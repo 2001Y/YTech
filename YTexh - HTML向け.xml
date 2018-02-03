@@ -138,7 +138,7 @@
               <b:elseif cond='data:blog.pageType == "error_page"'/>
               <div id="nopage" contentEditable="true">
                 > 404 error<br/>
-                このページは存在しません。<br>
+                このページは存在しません。<br/>
                 ここは入力できるから試してみてね！
               </div>
               <b:else/>
