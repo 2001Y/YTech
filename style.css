@@ -1812,9 +1812,13 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 #nopage {
 	color: #36ff07;
 	height: 15em;
-	border-radius: 6px;
 	padding: 20px;
 	background: #1c1c1c;
+}
+@media screen and (min-width:912px) {
+	#nopage {
+		border-radius: 6px;
+	}
 }
 
 /* Siema */
