@@ -132,7 +132,7 @@
                   コピー完了
                 </div>
                 <div class='light-box delay'>
-                  <img src='//rawgit.com/2001Y/YTech/master/load.svg'/>
+                  <img src=''/>
                 </div>
               </b:loop>
               <b:elseif cond='data:blog.pageType == "error_page"'/>
@@ -252,7 +252,7 @@
               <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
               <b:widget-setting name='showSnippets'>false</b:widget-setting>
-              <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
               <h4>PopularPosts</h4>
@@ -397,12 +397,8 @@
         setInterval(load,60000);
         (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-68964193-8'}, 'google_translate_element');
-        }
         -->
       </script>
-      <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </footer>
     <noscript>
       <div id="noscript">
