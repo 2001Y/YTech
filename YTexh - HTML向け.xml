@@ -136,11 +136,9 @@
                 </div>
               </b:loop>
               <b:elseif cond='data:blog.pageType == "error_page"'/>
-              <div id="nopage">
-                <div contentEditable="true">
-                  > 404 error<br/>
-                  このページは存在しません。
-                </div>
+              <div id="nopage" contentEditable="true">
+                > 404 error<br/>
+                このページは存在しません。
               </div>
               <b:else/>
               <b:loop values='data:posts' var='post'>
