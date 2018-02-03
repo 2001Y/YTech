@@ -1816,7 +1816,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	padding: 20px;
 	background: #1c1c1c;
 }
-#nopage code {
+#nopage div {
 	height: 2em;
 	overflow: hidden;
 	-webkit-animation: typewriter 4s steps(44) 1s 1 normal both;
