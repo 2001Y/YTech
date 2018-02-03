@@ -58,12 +58,12 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-kerning: normal;
 	        font-kerning: normal;
-	-webkit-animation: .5s pageFeedin;
-	        animation: .5s pageFeedin;
+	-webkit-animation: 1s pageFeedin;
+	        animation: 1s pageFeedin;
 }
 .feedout {
-	-webkit-animation: .3s pageFeedout;
-	        animation: .3s pageFeedout;
+	-webkit-animation: 1s pageFeedout;
+	        animation: 1s pageFeedout;
 }
 @-webkit-keyframes pageFeedin {
 	from {
