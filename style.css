@@ -1816,15 +1816,6 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 	padding: 20px;
 	background: #1c1c1c;
 }
-#nopage-balloon {
-	text-align: center;
-	background: #f4f4f4;
-	padding: 10px;
-	border-radius: 3px;
-	border: #3ca591 solid;
-	position: relative;
-	bottom: 1em;
-}
 
 /* Siema */
 

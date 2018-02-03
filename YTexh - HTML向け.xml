@@ -138,11 +138,9 @@
               <b:elseif cond='data:blog.pageType == "error_page"'/>
               <div id="nopage" contentEditable="true">
                 > 404 error<br/>
-                このページは存在しません。
-              </div>
-              <span id="nopage-balloon">
+                このページは存在しません。<br>
                 ここは入力できるから試してみてね！
-              </span>
+              </div>
               <b:else/>
               <b:loop values='data:posts' var='post'>
                 <a expr:href='data:post.canonicalUrl' class="post-link">
