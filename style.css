@@ -1806,7 +1806,7 @@ pre:hover .html:before,pre:hover .html:after,pre:hover .css:before,pre:hover .cs
 
 /* 404 */
 #nopage {
-	width: 100%;
+	color: #36ff07;
 	height: 15em;
 	border-radius: 6px;
 	padding: 20px;
