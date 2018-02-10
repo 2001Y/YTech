@@ -52,6 +52,8 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: unset;
 	width: 100%;
+	padding-right: constant(safe-area-inset-right);
+	padding-left: constant(safe-area-inset-right);
 	background: #f2f2f2;
 	overflow-scrolling: touch;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -186,6 +188,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0 0 10px -1em;
 }
 .separator {
+	margin: 0 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1327,12 +1330,10 @@ a.download:hover {
 
 /* ImgaeDiff */
 
-@media screen and (min-width: 769px) {
-	.flex {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 .diff {
 	font-size: 90%;
