@@ -121,8 +121,9 @@
                   <div class="post-body">
                     <data:post.body/>
                   </div>
-                  <div class="link">
-                    <script src="//rss.bloople.net/?url=https://2001y.blogspot.com/feeds/posts/default/-/CSS?alt=rss&amp;detail=14&amp;limit=5&amp;showtitle=false&amp;type=js"></script>
+                  <h2>関連記事</h2>
+                  <div class="relation-posts">
+                    <script src="//rss.bloople.net/?url=https://2001y.blogspot.com/feeds/posts/default/-/CSS?alt=rss&amp;detail=-1&amp;limit=3&amp;showtitle=false&amp;type=js"></script>
                   </div>
                   <div id="disqus">
                     <div id="disqus_thread"></div>
