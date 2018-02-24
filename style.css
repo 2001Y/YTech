@@ -1138,6 +1138,7 @@ a.download:hover {
 .last-comment>span,[class*="balloon"] p {
 	color: #363636;
 	width: 100%;
+	margin: 0;
 	padding: 21.5px;
 	border: 2px solid #363636;
 	border-radius: 10px;
@@ -1178,7 +1179,7 @@ a.download:hover {
 }
 @media screen and (min-width: 770px) {
 	.last-comment,[class*="balloon"] {
-		padding: 10px 20px;
+		padding: 20px;
 	}
 }
 @media screen and (max-width: 769px) {
