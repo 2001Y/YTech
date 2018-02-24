@@ -1146,7 +1146,7 @@ a.download:hover {
 	position: relative;
 	display: block;
 }
-.last-comment>span:after,.last-comment>span:before,[class*="balloon"] p:after,:before {
+.last-comment>span:after,.last-comment>span:before,[class*="balloon"] p:after,[class*="balloon"] p:before {
 	content: '';
 	width: 0;
 	height: 0;
