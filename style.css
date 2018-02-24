@@ -1129,7 +1129,7 @@ a.download:hover {
 }
 .last-comment a:hover img,[class*="balloon"] a:hover div {
 	-webkit-transform: scale(1.1);
-	    transform: scale(1.1);
+	transform: scale(1.1);
 }
 [class*="balloon"] span {
   margin-top: 3px;
@@ -1145,7 +1145,7 @@ a.download:hover {
 	position: relative;
 	display: block;
 }
-.last-comment>span:after,.last-comment>span:before,[class*="balloon"] p:after,[class*="balloon"] p:before {
+.last-comment>span:after,.last-comment>span:before,[class*="balloon"] p:after,:before {
 	content: '';
 	width: 0;
 	height: 0;
