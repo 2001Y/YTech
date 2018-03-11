@@ -1467,8 +1467,13 @@ a.download:hover {
 	border: 1px solid;
 	border-color: #f00;
 	border-radius: 8px 8px 0 0;
-	margin: -40px -10px 0 -18px;
+	margin: -45px -10px 0 -18px;
 	padding: 3px 10px 1px 10px;
+}
+@media screen and (max-width:911px) {
+	.check:before {
+		margin: -40px -10px 0 -18px;
+	}
 }
 .merit_demerit ul:first-of-type li:before {
 	color: #58ace1;
