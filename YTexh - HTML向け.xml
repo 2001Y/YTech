@@ -258,7 +258,7 @@
           </b:widget>
           <b:widget id='HTML1' type='HTML' locked='true'>
             <b:includable id='main'>
-              <h4>NowPlayingMusic</h4>
+              <h4>RealTimePlayingMusic</h4>
               <data:content/>
             </b:includable>
           </b:widget>
@@ -415,6 +415,10 @@
         setInterval(load,60000);
         (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({
+             google_ad_client: "ca-pub-3750999099107987",
+             enable_page_level_ads: true
+        });
         -->
       </script>
     </footer>
