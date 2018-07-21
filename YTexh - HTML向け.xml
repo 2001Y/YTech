@@ -17,6 +17,18 @@
     <meta property="article:publisher" href="https://twitter.com/Y20010920T"/>
     <meta property="article:publisher" href="https://line.me/ti/p/@ovx8986w"/>
     <meta property="article:publisher" href="https://www.youtube.com/channel/UCud0Fw7VvVtHbLlbXVi3WgQ"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on"/>
+    <link rel="dns-prefetch" href="//4.bp.blogspot.com"/>
+    <link rel="dns-prefetch" href="//1.bp.blogspot.com"/>
+    <link rel="dns-prefetch" href="//2.bp.blogspot.com"/>
+    <link rel="dns-prefetch" href="//3.bp.blogspot.com"/>
+    <link rel="dns-prefetch" href="//rawgit.com"/>
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com"/>
+    <link rel="dns-prefetch" href="//www.google-analytics.com"/>
+    <link rel="dns-prefetch" href="//ytech-1.disqus.com"/>
+    <link rel="dns-prefetch" href="//adservice.google.co.jp"/>
+    <link rel="dns-prefetch" href="//adservice.google.com"/>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
     <b:if cond='data:blog.canonicalUrl == data:blog.homepageUrl'>
       <link href="https://2001y.blogspot.com" rel="canonical"/>
     </b:if>
@@ -71,6 +83,7 @@
     <!--[if lt IE 9]>
       <script src='//cdn.jsdelivr.net/g/html5shiv@3.7.3,ie7.js@2.1b4(IE9.js),respond@1.4.2'></script>
     <![endif]-->
+    <script id="dsq-count-scr" src="//ytech-1.disqus.com/count.js" async></script>
     <link href="//rawgit.com/2001Y/YTech/master/style.css" rel="stylesheet"/>
     &lt;!--</head>--&gt;&lt;/head&gt;
   <body>
@@ -125,10 +138,25 @@
                   <div class="relation-posts">
                     <script src="//rss.bloople.net/?url=https://2001y.blogspot.com/feeds/posts/default/-/CSS?alt=rss&amp;detail=-1&amp;limit=3&amp;showtitle=false&amp;type=js"></script>
                   </div>
+                  <div id="disqus_thread"></div>
+                  <script>
+                  var disqus_config = function () {
+                    this.page.url = PAGE_URL;
+                    page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER;
+                    PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://ytech-1.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
+                  </script>
                   <div id="disqus">
                     <div id="disqus_thread"></div>
                     <noscript>
-                      JavaScriptが無効になっているためコメントできません。
+                      <a href="//disqus.com/?ref_noscript">JavaScriptが無効になっているためコメントできません。by Disqus</a>
                     </noscript>
                   </div>
                 </div>
@@ -300,17 +328,6 @@
         <script src='//rawgit.com/2001Y/YTech/master/script.min.js'></script>
         <script>
           <!--
-          let headers = document.querySelectorAll('h2');
-          let ol = document.createElement('ol');
-          for(let i = 0; i < headers.length; ++i) {
-            let li = document.createElement('li');
-            headers[i].id = 'toc' + i;
-            li.innerHTML = `<a href="#${headers[i].id}" class="jump-trigger">${headers[i].textContent}</a>`;
-            ol.appendChild(li);
-          }
-          let div = document.createElement('div');
-          div.appendChild(ol);
-          div.classList.add('toc');
           let lightbox = document.querySelectorAll(".light-box");
           let lightboxImg = document.querySelector(".light-box img");
           let body =  document.body;
@@ -348,12 +365,16 @@
           }[].forEach.call(document.getElementsByTagName("pre"), function (e, i, p) {
             e.addEventListener("click", copyText, false);
           });
-          (function () {
-            let d = document,
-            s = d.createElement('script');
-            s.src = '//ytech-1.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', + new Date());
-            (d.head || d.body).appendChild(s)
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;
+          canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER;
+          };
+          (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://ytech-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
           })();
           hljs.initHighlightingOnLoad();
           const moveTo = new MoveTo({tolerance: 10,duration: 300});
@@ -422,6 +443,8 @@
         -->
       </script>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/instantclick@3.1.0-2/dist/instantclick.min.js" data-no-instant="data-no-instant"></script>
+    <script data-no-instant="data-no-instant">InstantClick.init();</script>
     <noscript>
       <div id="noscript">
         <div>
